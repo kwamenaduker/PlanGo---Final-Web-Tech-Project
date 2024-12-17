@@ -1,12 +1,6 @@
-# PlanGo---Final-Web-Tech-Project
-PlanGo is a trip planning web application that allows users to create, update, and manage their trips seamlessly. With a clean interface, role-based access control, and real-time data management, PlanGo is designed to simplify travel planning. Built with HTML, CSS, JavaScript, PHP, and MySQL. 
-
-
-
-
 # **PlanGo - Trip Planner Web App**
 
-**PlanGo** is a web application designed to simplify trip planning and management. It allows users to create, update, and track trips seamlessly with role-based access control for enhanced security and organization.
+PlanGo is a feature-rich trip planning web application that allows users to create, update, and manage their trips seamlessly. With a clean interface, role-based access control, and real-time data management, PlanGo is designed to simplify travel planning. Built with HTML, CSS, JavaScript, PHP, and MySQL, it offers secure user authentication and dynamic trip tracking for upcoming and past trips.
 
 ---
 
@@ -18,7 +12,6 @@ PlanGo is a trip planning web application that allows users to create, update, a
    - Admins can manage users and trips.
    - Users can manage their own trips.
 - **Dynamic Dashboard**: View upcoming and past trips.
-- **Responsive Design**: Optimized for both desktop and mobile devices.
 
 ---
 
@@ -46,7 +39,7 @@ cd PlanGo
 3. Import the `plango_db.sql` file from the project root directory into the database.
 
 ### **3. Configure Database Connection**
-1. Open the `db.php` file in the root directory.
+1. Open the `config.php` file in the root directory.
 2. Update the following with your database credentials:
    ```php
    $host = "localhost";
@@ -70,21 +63,29 @@ cd PlanGo
 ```
 PlanGo/
 │
-├── assets/             # CSS, JS, and image files
-│   ├── css/            # Stylesheets
-│   ├── js/             # JavaScript files
-│   └── images/         # Images
+├── css/                       # Stylesheets
+│   ├── style.css              # All styles
 │
-├── db.php              # Database connection file
-├── index.php           # Main landing page
-├── login.php           # User login page
-├── signup.php          # User registration page
-├── dashboard.php       # User/Admin dashboard
-├── manage_trips.php    # Trip management functionality
-├── admin_users.php     # Admin user management
-├── logout.php          # Logout functionality
+├── js/                        # JavaScript files
+│   └── script.js              # Main JavaScript functionality
 │
-└── plango_db.sql       # SQL file for database setup
+├── images/                    # Images used in the project
+│
+├── db/                        # Database File
+│   └── plango_db.sql          # Database connection file
+│
+├── PHP/                       # PHP backend scripts
+│
+├── index.html                 # Landing page
+├── login.html                 # Login page (HTML)
+├── signup.html                # Signup page (HTML)
+├── dashboard.html             # User dashboard (HTML)
+├── create_trip.html           # Create trip page (HTML)
+├── view_trips.html            # View trips page (HTML)
+├── manage_trips.html          # Manage trips page (HTML)
+├── manage_users.html          # Manage users page (HTML)
+└── README.md                  # Project documentation
+
 ```
 
 ---
@@ -107,42 +108,14 @@ PlanGo/
 ### Dashboard
 ![Dashboard](assets/images/dashboard.png)
 
----
-
-## **Contributing**
-
-Contributions are welcome! If you'd like to contribute:
-
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add new feature"
-   ```
-4. Push the branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a Pull Request.
-
----
-
-## **License**
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## **Contact**
 
 For any questions or feedback, please reach out to:  
-**Your Name**  
-Email: your-email@example.com  
-GitHub: [YourUsername](https://github.com/your-username)
+**Kwamena Duker**  
+Email: kwamena.duker@ashesi.edu.gh
+GitHub: [kwamenaduker](https://github.com/kwamenaduker)
 
 --- 
-
-This README covers all necessary aspects of the project, from installation to usage and contribution. Let me know if you need further edits! 🚀
