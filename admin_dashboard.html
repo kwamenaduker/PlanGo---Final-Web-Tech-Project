@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - PlanGo</title>
+    <link rel="icon" href="images/plango-fav.png" type="image/icon type">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/plango-logo.png" alt="PlanGo Logo" id="plango-logo">
+        </a>
+        <nav class="nav-bar">
+            <a href="admin_dashboard.html" class="active">Dashboard</a>
+            <a href="admin_users.html">Manage Users</a>
+            <a href="admin_trips.html">Manage Trips</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="php/logout.php" class="signup-btn">Logout</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <section class="welcome-section">
+            <h2>Welcome Back To Your Dashboard, <span id="admin-name">Admin</span>!</h2>
+            <p id="current-date"></p>
+        </section>
+
+        <div class="dashboard-overview">
+            <div class="overview-card">
+                <h3>Total Users</h3>
+                <p class="stat" id="total-users">0</p>
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="overview-card">
+                <h3>Most Popular Destination</h3>
+                <p class="stat" id="popular-destination">N/A</p>
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="overview-card">
+                <h3>Average Trip Budget</h3>
+                <p class="stat" id="average-budget">$0</p>
+                <i class="fas fa-dollar-sign"></i>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

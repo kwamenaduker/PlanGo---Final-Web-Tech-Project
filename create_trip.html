@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Plan - PlanGo</title>
+    <link rel="icon" href="images/plango-fav.png" type="image/icon type">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <a href="index.html">
+            <img src="images/plango-logo.png" alt="PlanGo Logo" id="plango-logo">
+        </a>
+        <nav class="nav-bar">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="trip_details.html">My Trips</a>
+            <a href="budget_management.html">Manage Budgets</a>
+            <a href="php/logout.php" class="signup-btn">Logout</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="form-container">
+        <h2>Create a New Trip</h2>
+
+        <p id="error-message" class="error-message"></p>
+
+        <form id="create-trip-form">
+            <label for="plan-name">Trip Name</label>
+            <input type="text" id="plan-name" name="plan_name" placeholder="Enter trip name" required>
+
+            <label for="destination">Destination</label>
+            <input type="text" id="destination" name="destination" placeholder="Enter destination" required>
+
+            <label for="start-date">Start Date</label>
+            <input type="date" id="start-date" name="start_date" required>
+
+            <label for="end-date">End Date</label>
+            <input type="date" id="end-date" name="end_date" required>
+
+            <label for="notes">Notes (Optional)</label>
+            <textarea id="notes" name="notes" placeholder="Add additional details"></textarea>
+
+            <button type="submit">Create Trip</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PlanGo. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

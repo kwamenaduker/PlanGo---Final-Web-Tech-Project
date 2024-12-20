@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Trip - PlanGo</title>
+    <link rel="icon" href="images/plango-fav.png" type="image/icon type">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/plango-logo.png" alt="PlanGo Logo" id="plango-logo">
+        </a>
+        <nav class="nav-bar">
+            <a href="trip_details.html">My Trips</a>
+            <a href="php/logout.php" class="signup-btn">Logout</a>
+        </nav>
+    </header>
+    <main class="form-container">
+        <h1>Update Trip</h1>
+        <form id="update-trip-form">
+            <label for="trip-name">Trip Name:</label>
+            <input type="text" id="trip-name" name="tripName" required>
+
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination">
+
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="startDate" required>
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="endDate" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <button type="submit" class="cta-btn">Update Trip</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 PlanGo. All Rights Reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

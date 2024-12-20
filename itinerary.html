@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itinerary Planner</title>
+    <link rel="icon" href="images/plango-fav.png" type="image/icon type">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/plango-logo.png" alt="PlanGo Logo" id="plango-logo">
+        </a>
+        <nav class="nav-bar">
+            <a href="user_analytics.html">Analytics</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="itinerary.html" class="active">Itinerary</a>
+            <a href="trip_details.html">My Trips</a>
+            <a href="budget_management.html">Manage Budgets</a>
+            <a href="php/logout.php" class="signup-btn">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <h1 style="text-align:center;">Itinerary Planner</h1>
+
+        <!-- Trip Selector -->
+        <div id="trip-selector-container">
+            <label for="trip-selector">Select a Trip:</label>
+            <select id="trip-selector">
+                <option value="" disabled selected>Select a trip</option>
+                <!-- Options populated dynamically -->
+            </select>
+        </div>
+        
+
+        <!-- Add Itinerary Form -->
+        <form id="add-itinerary-form">
+            <label for="activity">Activity:</label>
+            <input type="text" id="activity" name="activity" required>
+            <label for="activity-date">Date:</label>
+            <input type="date" id="activity-date" name="activityDate" required>
+            <label for="start-time">Start Time:</label>
+            <input type="time" id="start-time" name="startTime" required>
+            <label for="end-time">End Time:</label>
+            <input type="time" id="end-time" name="endTime" required>
+            <label for="notes">Notes:</label>
+            <textarea id="notes" name="notes"></textarea>
+            <button type="submit">Add Activity</button>
+        </form>
+
+        <!-- Itinerary List -->
+        <h2>Itinerary</h2>
+        <ul id="itinerary-list">
+            <li>No activities added yet.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 PlanGo. All rights reserved.</p>
+    </footer>
+    <script src="js/script_itinerary.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - PlanGo</title>
+    <link rel="icon" href="images/plango-fav.png" type="image/icon type">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/plango-logo.png" alt="PlanGo Logo" id="plango-logo">
+        </a>
+        <nav class="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="login.html" class="signup-btn">Login</a>
+        </nav>
+    </header>
+    <main>
+        <section class="form-container">
+            <h2>Create Your Account</h2>
+
+            <!-- Error Message Container -->
+            <p id="error-message" class="error-message"></p>
+            
+            <form id="register-form">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+                
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm your password" required>
+                
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Log in here</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 PlanGo. All Rights Reserved.</p>
+    </footer>
+    <script src="js/script.js"></script> <!-- Add JS script for AJAX -->
+</body>
+</html>

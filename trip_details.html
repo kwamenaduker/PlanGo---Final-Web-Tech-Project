@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Details - PlanGo</title>
+    <link rel="icon" href="images/plango-fav.png" type="image/icon type">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <a href="index.html">
+            <img src="images/plango-logo.png" alt="PlanGo Logo" id="plango-logo">
+        </a>
+        <nav class="nav-bar">
+            <a href="user_analytics.html">Analytics</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="trip_details.html" class="active">My Trips</a>
+            <a href="budget_management.html">Manage Budgets</a>
+            <a href="php/logout.php" class="signup-btn">Logout</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="dashboard-container">
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <h1>Manage Your Trips</h1>
+            <p id="current-date"></p>
+        </section>
+
+        <section class="search-filter">
+            <div class="search-bar">
+                <label for="search-bar">Search Trips:</label>
+                <input type="text" id="search-bar" class="input-field" placeholder="Search by trip name or destination">
+            </div>
+            <div class="filter-bar">
+                <label for="filter-start-date">Start Date:</label>
+                <input type="date" id="filter-start-date" class="input-field">
+                <label for="filter-end-date">End Date:</label>
+                <input type="date" id="filter-end-date" class="input-field">
+            </div>
+            <button id="apply-filters" class="filter-btn">Apply Filters</button>
+        </section>
+        
+
+        <!-- Trips Section -->
+        <section class="trips-section">
+            <h2>Upcoming Trips</h2>
+            <ul id="upcoming-trips-list" class="trip-card">
+                <li>No upcoming trips found.</li>
+            </ul>
+        </section>
+
+        <section class="trips-section">
+            <h2>Previous Trips</h2>
+            <ul id="previous-trips-list" class="trip-card">
+                <li>No previous trips found.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PlanGo. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+    <link rel="icon" href="images/plango-fav.png" type="image/icon type">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/analytics.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/plango-logo.png" alt="PlanGo Logo" id="plango-logo">
+        </a>
+        <nav class="nav-bar">
+            <a href="admin_dashboard.html">Dashboard</a>
+            <a href="admin_users.html">Manage Users</a>
+            <a href="admin_trips.html">Manage Trips</a>
+            <a href="analytics.html" class="active">Analytics</a>
+            <a href="php/logout.php" class="signup-btn">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="text-align: center;">Analytics Dashboard</h1>
+
+        <!-- Admin Analytics -->
+        <section id="admin-analytics">
+            <div class="analytics-card">
+                <h2>Overview</h2>
+                <p>Total Users: <span id="total-users">0</span></p>
+                <p>Total Trips: <span id="total-trips">0</span></p>
+                <p>Average Trip Budget: <span id="average-budget">$0.00</span></p>
+            </div>
+
+            <div class="analytics-card">
+                <h2>Popular Destinations</h2>
+                <ul id="popular-destinations"></ul>
+            </div>
+
+            <div class="analytics-card">
+                <h2>Budget Breakdown</h2>
+                <canvas id="budget-chart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PlanGo. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

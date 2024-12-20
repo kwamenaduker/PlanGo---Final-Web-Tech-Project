@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - PlanGo</title>
+    <link rel="icon" href="images/plango-fav.png" type="image/icon type">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <a href="index.html">
+            <img src="images/plango-logo.png" alt="PlanGo Logo" id="plango-logo">
+        </a>
+        <nav class="nav-bar">
+            <a href="user_analytics.html">Analytics</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="trip_details.html">My Trips</a>
+            <a href="budget_management.html">Manage Budgets</a>
+            <a href="php/logout.php" class="signup-btn">Logout</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="dashboard-container">
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <h1 id="welcome-message">Welcome To Your Dashboard, User!</h1>
+            <p id="current-date"></p>
+        </section>
+
+        <!-- Overview Widgets -->
+        <section class="overview-widgets">
+            <div class="widget">
+                <h3>Trips Created</h3>
+                <p id="plans-count">0</p>
+            </div>
+            <div class="widget">
+                <h3>Upcoming Trips</h3>
+                <p id="upcoming-trips">0</p>
+            </div>
+            <div class="widget">
+                <h3>Saved Places</h3>
+                <p id="saved-places">0</p>
+            </div>
+        </section>
+
+        <!-- Recent Activities -->
+        <section class="recent-activities">
+            <h2>Recent Activities</h2>
+            <ul id="activity-list">
+                <li>No recent activities found.</li>
+            </ul>
+        </section>
+
+        <!-- Call-to-Action -->
+        <section class="cta">
+            <form action="create_trip.html">
+                <button type="submit" class="cta-btn">Create New Trip</button>
+            </form>
+        </section>
+
+
+
+
+        <!-- Saved Places Section -->
+        <section class="form-container">
+            <p id="success-message" class="success-message"></p>
+            <h2>Saved Places</h2>
+            <!-- Add Place Form -->
+            <form id="add-place-form" action="php/save_place.php" method="POST">
+                <label for="place-name">Place Name:</label>
+                <input type="text" id="place-name" name="placeName" placeholder="Enter a place name" required>
+                <label for="location">Location (Optional):</label>
+                <input type="text" id="location" name="location" placeholder="Enter location">
+                <label for="notes">Notes (Optional):</label>
+                <textarea id="notes" name="notes" placeholder="Add notes..."></textarea>
+                <button type="submit">Save Place</button>
+            </form>
+
+            <!-- Display Saved Places -->
+            <ul id="saved-places-list">
+                <li>No saved places yet.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PlanGo. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
