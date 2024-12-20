@@ -144,7 +144,8 @@ PlanGo/
 
 
 ### User Dashboard
-<img width="1512" alt="Screenshot 2024-12-20 at 2 38 00 AM" src="https://github.com/user-attachments/assets/e3e3005b-0d76-41ff-ab11-e43c04b49d61" />
+<img width="1512" alt="Screenshot 2024-12-20 at 3 36 58 AM" src="https://github.com/user-attachments/assets/0c6c2d6c-08d7-4a37-a6b6-50cc364b2d71" />
+
 
 
 
@@ -154,12 +155,14 @@ PlanGo/
 
 
 ### Itinerary Planner
-<img width="1512" alt="Screenshot 2024-12-20 at 3 25 40 AM" src="https://github.com/user-attachments/assets/29c9618b-66f6-4f84-8aab-9e50076b6558" />
+<img width="1512" alt="Screenshot 2024-12-20 at 3 34 01 AM" src="https://github.com/user-attachments/assets/51e9acc2-d820-4a0b-8199-f5dfca7edcc5" />
+
 
 
 
 ### Admin Dashboard
-<img width="1512" alt="Screenshot 2024-12-20 at 3 26 57 AM" src="https://github.com/user-attachments/assets/512a82db-9767-4978-ae24-668d626ac782" />
+<img width="1512" alt="Screenshot 2024-12-20 at 3 36 32 AM" src="https://github.com/user-attachments/assets/604f88d1-bd4f-408a-b219-207cf9ad50f0" />
+
 
 
 
